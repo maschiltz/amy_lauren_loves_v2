@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+#content
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.nav {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list {
+}
+
+.nav-item {
+  float: left;
+  *display: inline;
+}
+
+.nav-item a {
+  display: block;
+  padding: 15px 20px;
+}
+
+.nav-mobile {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.nav-active {
+  display: block !important;
+}
+
+.nav-mobile-open {
+}
+
+@media screen and (min-width: 1020px) {
+  #content {
+    width: 1020px;
+  }
+
+  #slideshow {
+    width: 996px;
+    border: black 1px solid;
+    height: 500px;
+  }
+
+  .blog_image {
+    border: black 1px solid;
+    height:240px;
+    width: 240px;
+  }  
+}
+
+@media screen and (max-width: 1020px) {
+  .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }  
+
+  #content {
+    width: 630px;
+  }
+
+  .blog_image {
+    border: red 1px solid;
+    height: 195px;
+    width: 195px;
+  }
+
+  #slideshow {
+    border: red 1px solid;
+    height: 400px;
+    width: 609px;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  #content {
+    width: 450px;
+  }
+
+  #slideshow {
+    width: 402px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  #content {
+    width: 400px;
+  }
+}
+
+

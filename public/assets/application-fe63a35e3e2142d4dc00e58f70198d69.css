@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+#content
+{
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_image {
+  height:200px;
+  width: 200px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#slideshow {
+  width: 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .blog_image {
+    border: black 1px solid;
+  }
+  
+  #slideshow {
+    border: black 1px solid;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #content {
+    width: 630px;
+  }
+
+  .blog_image {
+    border: red 1px solid;
+  }
+
+  #slideshow {
+    border: red 1px solid;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #content {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #content {
+    width: 400px;
+  }
+}
+
+
