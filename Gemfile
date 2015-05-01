@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'pg'
 gem 'dotenv-rails'
+gem 'rails_12factor'
