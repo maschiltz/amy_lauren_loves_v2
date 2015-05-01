@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 gem 'pg'
 gem 'dotenv-rails'
 gem 'rails_12factor'
+gem 'paperclip'
+gem 'devise'
